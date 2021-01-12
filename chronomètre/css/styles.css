@@ -1,0 +1,104 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.8rem;
+    background-image: url(/chronomètre/img/background-galaxie-lg.jpg);
+}
+
+.black-hole{
+    text-align: center;
+    margin: 5% 0 0 5%;
+    width:20%;
+    height:10px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 35px 1px rgba(200,200,200,0.8);
+    background-color: #000;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom:10%;
+    left:5%;
+    right:5%;
+    max-width:100%;
+    color:#fff;
+}
+
+#counter{
+    font-size: 6rem;
+}
+
+button{
+    font-size: 5rem; 
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+#resetBtn{
+    position: absolute;
+    top:2%;
+    right:2%;
+    font-size: 2rem;;
+}
+
+
+/* ANIMATIONS */
+
+.animSlide{
+    animation-name: slide;
+    animation-duration: 40s;
+}
+
+.animAttract{
+    animation-name: attract;
+    animation-duration: 25s;
+}
+
+.animFade{
+    animation-name: fade;
+    animation-duration: 25s;
+}
+
+@keyframes slide {
+    from {
+      width: 20%;
+      height: 10px;
+      bottom:10%;
+    }
+  
+    to {
+       width:80%;
+       height:250px;
+    }
+}
+  
+@keyframes fade {
+    from {
+        opacity:1;
+    }
+    
+    to {
+        opacity:0;
+    }
+}
+
+@keyframes attract {
+    from {
+        bottom:10%;
+        left:5%;
+        right:5%;
+    }
+    to {
+        bottom:72%;
+        left:28%;
+        right:50%;
+        }
+    
+}
+
