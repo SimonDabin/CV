@@ -93,6 +93,13 @@ header h1{
     font-size: 3.5em;
     font-weight: 500;
 }
+/*************************ANNONCE*************************/
+.annonce{
+    display: flex;
+    margin:1em auto 1em auto;
+    width:90%;
+    text-align: center;
+}
 
 /*************************INTRO*************************/
 .intro-box{
@@ -241,6 +248,10 @@ header h1{
     padding: 0 0 3px 0;
     font-size: 1.3em;
 }
+#expériences a:hover{
+    color: #008B8B;
+}
+
 
 /*************************FORMATIONS*************************/
 #formations{
